@@ -205,3 +205,16 @@ body{
     background-color: #fff;
     color:#4e6576;
 }
+
+.endtext{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    backdrop-filter:blur(20px);
+    margin-top: 70px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    transition: height .2s ease;
+    visibility: visible;
+    opacity: 1;
+    border-top:2px solid #fff;
+}
