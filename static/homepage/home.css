@@ -185,3 +185,23 @@ body{
     animation: burnEffect 3s ease infinite;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
+
+.button_login{
+    height: 50px;
+    width: 130px;
+    background: transparent;
+    border: 2px solid #fff;
+    overflow: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.button_login:hover{
+    background-color: #fff;
+    color:#4e6576;
+}
