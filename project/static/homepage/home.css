@@ -213,7 +213,7 @@ body{
     align-items: center;
     margin-top:  50px;
     background-color: transparent;
-    height: 700px;
+    height: 1000px;
     width: 100%;    
 }
 .myproject{
@@ -235,19 +235,22 @@ body{
     width: 30%;
     margin-bottom: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 8px;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.43);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .pho1 img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .pho1 p {
@@ -256,14 +259,64 @@ body{
     font-size: 1.2em;
     width: 100%;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+}
+
+.pho1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.pho1:hover::before {
+    opacity: 2;
+}
+
+.pho1:hover img {
+    transform: translateY(-10px);
+    filter: brightness(1);
+}
+
+.pho1:hover p {
+    opacity: 1;
+    color: rgb(209, 81, 27);
+    font-size: 1.2em;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(0, 0, 0, 0.368);
+    margin-top: 5px;
+    padding: 9px;
+}
+
+.pho1:hover {
+    animation: firebox 1s ease-in-out infinite alternate;
+}
+
+@keyframes firebox {
+    0% {
+        box-shadow: 0 0 10px rgba(234, 140, 106, 0.5), 0 0 20px rgba(207, 180, 146, 0.5), 0 0 30px rgba(167, 124, 252, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(31, 49, 86, 0.8), 0 0 30px rgba(255, 140, 0, 0.8), 0 0 40px rgba(172, 239, 105, 0.8);
+    }
 }
 
 @keyframes bgAnimation2 {
     to {
-        color: rgba(173, 175, 233, 0.759);
+        color: rgb(72, 74, 126);
     }
     from {
-        color: rgb(208, 197, 197);
+        color: rgb(227, 172, 96);
     }
 }
 .endtext{ 
