@@ -3,25 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>DigitalSpace Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-             <a href="home.html" class="ag" style="right:70px; font-size: 2rem;">Home</a>
-             <!-- About link removed -->
-             <!-- <a href="dashboard.html" class="ag">Dashboard</a> -->
-             <a href="bio.html" class="ag">About</a>
-             <a href="degree.html" class="ag"> Degree info</a>
-             <a href="portfolio.html" class="ag">Portfolio</a>
-             <a href="blog.html" class="ag">Blog</a>
-              
-        </nav>
-        
-    <div class="content">
-        <h1>Dashboard</h1>
-        <p>This is the dashboard page content.</p>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="person.png" alt="Profile" class="profile-img">
+                        <div class="profile-status online"></div>
+                    </div>
+                    <h3>Sumit Kumar</h3>
+                    <p class="role">BCA Student & AI Enthusiast</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">15</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-value">1.2k</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                    </div>
+                    <div class="profile-social">
+                        <a href="https://github.com/sumitkumar1233edeedad" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sumit-kumar-42b09a296" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/sumitkumar1233edeedad" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active">
+                        <a href="dashboard.html"><i class="fas fa-home"></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html"><i class="fas fa-briefcase"></i>Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="project.html"><i class="fas fa-project-diagram"></i>Projects</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"><i class="fas fa-blog"></i>Blog</a>
+                    </li>
+                    <li>
+                        <a href="analytics.html"><i class="fas fa-chart-line"></i>Analytics</a>
+                    </li>
+                    <li>
+                        <a href="settings.html"><i class="fas fa-cog"></i>Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Navigation -->
+            <nav class="top-nav">
+                <div class="nav-left">
+                    <button class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <div class="nav-item">
+                        <i class="far fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="nav-item">
+                        <i class="far fa-envelope"></i>
+                        <span class="badge">5</span>
+                    </div>
+                    <div class="profile-dropdown">
+                        <img src="profile.jpg" alt="Profile">
+                        <span>John Doe</span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: rgba(54, 162, 235, 0.2)">
+                            <i class="fas fa-code" style="color: rgb(54, 162, 235)"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Projects</h3>
+                            <p class="stat-number">24</p>
+                            <p class="stat-change positive">+12% <span>vs last month</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: rgba(75, 192, 192, 0.2)">
+                            <i class="fas fa-users" style="color: rgb(75, 192, 192)"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Followers</h3>
+                            <p class="stat-number">1,234</p>
+                            <p class="stat-change positive">+5.2% <span>vs last month</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: rgba(255, 159, 64, 0.2)">
+                            <i class="fas fa-star" style="color: rgb(255, 159, 64)"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Rating</h3>
+                            <p class="stat-number">4.8</p>
+                            <p class="stat-change positive">+0.3 <span>vs last month</span></p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon" style="background: rgba(153, 102, 255, 0.2)">
+                            <i class="fas fa-trophy" style="color: rgb(153, 102, 255)"></i>
+                        </div>
+                        <div class="stat-details">
+                            <h3>Achievements</h3>
+                            <p class="stat-number">15</p>
+                            <p class="stat-change positive">+2 <span>this month</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Progress -->
+                <div class="content-grid">
+                    <div class="content-card projects-progress">
+                        <div class="card-header">
+                            <h2>Current Projects</h2>
+                            <button class="view-all">View All</button>
+                        </div>
+                        <div class="progress-list">
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <h4>AI Research Paper</h4>
+                                    <p>Machine Learning</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 75%"></div>
+                                </div>
+                                <span class="progress-percentage">75%</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <h4>Trading Algorithm</h4>
+                                    <p>Python Development</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-percentage">60%</span>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-info">
+                                    <h4>Portfolio Website</h4>
+                                    <p>Web Development</p>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span class="progress-percentage">90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills Overview -->
+                    <div class="content-card skills-overview">
+                        <div class="card-header">
+                            <h2>Skills Overview</h2>
+                            <button class="view-all">Details</button>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-python"></i>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-level expert">Expert</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-brain"></i>
+                                    <span>Machine Learning</span>
+                                </div>
+                                <div class="skill-level intermediate">Intermediate</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fas fa-database"></i>
+                                    <span>SQL</span>
+                                </div>
+                                <div class="skill-level advanced">Advanced</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="content-card recent-activity">
+                    <div class="card-header">
+                        <h2>Recent Activity</h2>
+                        <button class="view-all">View All</button>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>New Repository Created</h4>
+                                <p>Created a new AI project repository</p>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Project Milestone</h4>
+                                <p>Completed the trading algorithm phase 1</p>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="activity-details">
+                                <h4>Certification Completed</h4>
+                                <p>Earned Advanced ML Certification</p>
+                                <span class="activity-time">3 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="dashboard-footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Me</h3>
+                <p>BCA Student passionate about AI, Web Development, and Data Science. Creating innovative solutions and sharing knowledge.</p>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91 6230783597</span>
+                    <span><i class="fas fa-envelope"></i> sumitsohal963@gmail.com</span>
+                </div>
+            </div>
+            
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="portfolio.html"><i class="fas fa-angle-right"></i> Portfolio</a></li>
+                    <li><a href="project.html"><i class="fas fa-angle-right"></i> Projects</a></li>
+                    <li><a href="blog.html"><i class="fas fa-angle-right"></i> Blog</a></li>
+                    <li><a href="contact"><i class="fas fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>Connect With Me</h3>
+                <div class="socials">
+                    <a href="https://github.com/sumitkumar1233edeedad/digital-space.git" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-42b09a296" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com/sumitkumar1233edeedad" target="_blank" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCKau3HuKWm2fjaBZ3bN3uKA" target="_blank" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sumit Kumar | Digital Space Portfolio</p>
+            <div class="footer-badges">
+                <span class="badge-item"><i class="fas fa-code"></i> BCA Student</span>
+                <span class="badge-item"><i class="fas fa-brain"></i> AI Enthusiast</span>
+                <span class="badge-item"><i class="fas fa-laptop-code"></i> Developer</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
 </body>
 </html>

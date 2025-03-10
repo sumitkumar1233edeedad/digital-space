@@ -3,25 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog | Digital Space</title>
     <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-             <a href="home.html" class="ag" style="right:70px; font-size: 2rem;">Home</a>
-             <a href="bio.html" class="ag">About</a>
-             <a href="dashboard.html" class="ag">Dashboard</a>
-             <a href="degree.html" class="ag"> Degree info</a>
-             <a href="portfolio.html" class="ag">Portfolio</a>
-
-             
-              
+            <div class="nav-brand">
+                <a href="home.html" class="logo">Digital Space</a>
+            </div>
+            <div class="nav-links">
+                <a href="home.html" class="ag">Home</a>
+                <a href="bio.html" class="ag">About</a>
+                <a href="dashboard.html" class="ag">Dashboard</a>
+                <a href="degree.html" class="ag">Degree Info</a>
+                <a href="portfolio.html" class="ag">Portfolio</a>
+                <a href="blog.html" class="ag active">Blog</a>
+            </div>
         </nav>
     </header>
-    <div class="content">
-        <h1>Blog</h1>
-        <p>This is the blog page content.</p>
-    </div>
+
+    <main class="blog-container">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="hero-content">
+                <h1>My Blog</h1>
+                <p>Thoughts, tutorials, and insights about technology and development</p>
+            </div>
+        </section>
+
+        <!-- Featured Posts -->
+        <section class="featured-posts">
+            <div class="section-header">
+                <h2>Featured Posts</h2>
+            </div>
+            <div class="posts-grid">
+                <article class="post-card featured">
+                    <div class="post-image">
+                        <img src="photo/Designer.jpeg" alt="Web Development" loading="lazy">
+                        <div class="post-category">Technology</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Getting Started with Web Development</h3>
+                        <p>A comprehensive guide for beginners looking to start their journey in web development...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 10, 2024</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Recent Posts -->
+        <section class="recent-posts">
+            <div class="section-header">
+                <h2>Recent Posts</h2>
+            </div>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="photo/8.png" alt="Machine Learning" loading="lazy">
+                        <div class="post-category">AI/ML</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Introduction to Machine Learning</h3>
+                        <p>Understanding the basics of machine learning and its applications...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 8, 2024</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="photo/Designer(3).jpeg" alt="CSS Techniques" loading="lazy">
+                        <div class="post-category">Development</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Modern CSS Techniques</h3>
+                        <p>Exploring the latest CSS features and best practices...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 5, 2024</span>
+                            <span><i class="far fa-clock"></i> 3 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-image">
+                        <img src="photo/Designer(5).jpeg" alt="Portfolio Website" loading="lazy">
+                        <div class="post-category">Projects</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Building a Portfolio Website</h3>
+                        <p>Step-by-step guide to creating a professional portfolio...</p>
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 1, 2024</span>
+                            <span><i class="far fa-clock"></i> 6 min read</span>
+                        </div>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories-section">
+            <div class="section-header">
+                <h2>Categories</h2>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Development</h3>
+                    <span>12 Posts</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>AI & ML</h3>
+                    <span>8 Posts</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile</h3>
+                    <span>5 Posts</span>
+                </a>
+                <a href="#" class="category-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend</h3>
+                    <span>7 Posts</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/sumitkumar1233edeedad/digital-space.git" target="_blank" class="social-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sumit-kumar-42b09a296/" target="_blank" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:sumitsohal963@gmail.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+916230683507" class="social-icon">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p>&copy; 2024 Sumit Kumar. All rights reserved.</p>
+    </footer>
 </body>
 </html>

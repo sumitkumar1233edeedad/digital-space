@@ -3,24 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About Me | Digital Space</title>
     <link rel="stylesheet" href="bio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-             <a href="home.html" class="ag" style="right:70px; font-size: 2rem;">Home</a>
-             <!-- About link removed -->
-
-             <a href="dashboard.html" class="ag">Dashboard</a>
-             <a href="degree.html" class="ag">Degree Info</a>
-             <a href="portfolio.html" class="ag">Portfolio</a>
-             <a href="blog.html" class="ag">Blog</a>
+            <div class="nav-brand">
+                <a href="home.html" class="logo">Digital Space</a>
+            </div>
+            <div class="nav-links">
+                <a href="home.html" class="ag">Home</a>
+                <a href="dashboard.html" class="ag">Dashboard</a>
+                <a href="degree.html" class="ag">Degree Info</a>
+                <a href="portfolio.html" class="ag active">Portfolio</a>
+                <a href="blog.html" class="ag">Blog</a>
+            </div>
         </nav>
     </header>
-    <div class="content">
-        <!-- About Me section removed -->
 
-    </div>
+    <main class="bio-container">
+        <!-- Hero Section -->
+        <section class="bio-hero">
+            <div class="profile-card">
+                <div class="profile-image">
+                    <img src="person.png" alt="Profile Picture" loading="lazy">
+                </div>
+                <h1>sumit kumar</h1>
+                <p class="title">Full Stack Developer</p>
+                <div class="social-links">
+                    <a href="https://github.com/sumitkumar1233edeedad/digital-space.git" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sumit-kumar-42b09a296/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:sumitsohal963@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+916230683507" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+                <div class="portfolio-link">
+                    <a href="portfolio.html" class="cta-button">View My Portfolio</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="section-content">
+                <h2>About Me</h2>
+                <p class="bio-text">
+                    I'm a passionate Full Stack Developer with expertise in modern web technologies. 
+                    I love creating elegant solutions to complex problems and am constantly learning 
+                    new technologies to stay at the forefront of web development.
+                </p>
+                
+                <div class="quick-info">
+                    <div class="info-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Development</h3>
+                        <p>Full Stack Development with modern technologies</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Bachelor's in Computer Applications</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Experience</h3>
+                        <p>3+ years of coding experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="section-content">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Linux</span>
+                            <span class="skill-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section class="interests-section">
+            <div class="section-content">
+                <h2>Interests & Hobbies</h2>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Game Development</h3>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Photography</h3>
+                    </div>
+                    <div class="interest-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Reading</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="social-links">
+            <a href="https://github.com/sumitkumar1233edeedad/digital-space.git" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sumit-kumar-42b09a296/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:sumitsohal963@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+916230683507" class="social-icon"><i class="fas fa-phone"></i></a>
+        </div>
+        <div class="contact-info">
+            <p class="name">Sumit Kumar</p>
+            <p class="email">Email: sumitsohal963@gmail.com</p>
+            <p class="phone">Phone: +91 6230683507</p>
+        </div>
+        <p>&copy; 2024 Sumit Kumar. All rights reserved.</p>
+    </footer>
 </body>
 </html>

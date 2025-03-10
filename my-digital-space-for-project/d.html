@@ -3,10 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amazon Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232F3E;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-bar {
+            display: flex;
+            flex: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+        }
+        .search-bar button {
+            padding: 10px;
+            background-color: #febd69;
+            border: none;
+            cursor: pointer;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+        .product h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .product p {
+            margin: 0 0 10px;
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #232F3E;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <p>hell</p>
-    </p>
+    <header>
+        <div class="logo">
+            Amazon Clone
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Orders</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h1>Welcome to Amazon Clone</h1>
+        <p>Browse our products and enjoy shopping!</p>
+        <div class="product-list">
+            <div class="product">
+                <h2>Product 1</h2>
+                <div class="product-image" style="background-image: url('product1.jpg');"></div>
+                <p>Description of product 1.</p>
+                <p>Price: $10.00</p>
+            </div>
+            <div class="product">
+                <h2>Product 2</h2>
+                <div class="product-image" style="background-image: url('product2.jpg');"></div>
+                <p>Description of product 2.</p>
+                <p>Price: $20.00</p>
+            </div>
+            <div class="product">
+                <h2>Product 3</h2>
+                <div class="product-image" style="background-image: url('product3.jpg');"></div>
+                <p>Description of product 3.</p>
+                <p>Price: $30.00</p>
+            </div>
+            <div class="product">
+                <h2>Product 4</h2>
+                <div class="product-image" style="background-image: url('product4.jpg');"></div>
+                <p>Description of product 4.</p>
+                <p>Price: $40.00</p>
+            </div>
+            <div class="product">
+                <h2>Product 5</h2>
+                <div class="product-image" style="background-image: url('product5.jpg');"></div>
+                <p>Description of product 5.</p>
+                <p>Price: $50.00</p>
+            </div>
+            <div class="product">
+                <h2>Product 6</h2>
+                <div class="product-image" style="background-image: url('product6.jpg');"></div>
+                <p>Description of product 6.</p>
+                <p>Price: $60.00</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Amazon Clone. All rights reserved.
+    </footer>
 </body>
 </html>
